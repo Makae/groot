@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{$WWWCSS}/styles.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800|Roboto:900,400,700,400italic,500,300,100|&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="{$WWWJS}/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="{$WWWJS}/core.js"></script>
+  </head>
+  <body>
+  <div id="header">
+    <div class="container">
+     {$header}
+    </div>
+  </div>
+  <div id="container" class="container">
+    <div id="main">
+      <div id="left">
+        {$navi}
+      </div>
+      <div id="right">
+        {$breadcrumbs}
+        <div id="content">
+        {$view_content}
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      {$footer}
+    </div>
+  </div>
+  </body>
+</html>

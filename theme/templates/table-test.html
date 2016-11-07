@@ -1,0 +1,31 @@
+<table>
+  {if condition="isset($head)"}
+  <thead>
+    <tr>
+      {for array="$head.content"}
+        <th>{$value}</th>
+      {/for}
+    </tr>
+  </thead>
+  {/if}
+  {if condition="isset($body)"}
+  <tbody>
+    {for array="$body.content"}
+    <tr>
+      {for array="$value"}
+        <th>{$value}{$key}</th>
+      {/for}
+    </tr>
+    {/for}
+  </tbody>
+  {/if}
+  {if condition="isset($foot)"}
+  <tfoot>
+    <tr>
+      {for array="$foot"}
+        <th>{$value.content}</th>
+      {/for}
+    </tr>
+  </tfoot>
+  {/if}
+</table>

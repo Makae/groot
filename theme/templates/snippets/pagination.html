@@ -1,0 +1,21 @@
+<div class="pagination-wrapper">
+  <ul class="pagination style-{$style}">
+  {if condition="$canPrev"}
+    <li class="">
+      <a href="{$start.link}">{$start.label}</a>
+    </li>
+    <li>...</li>
+  {/if}
+  {for array="$links"}
+    <li class="{if condition="$value.current == true"} active {/if}">
+      <a href="{$value.link}">{$value.label}</a>
+    </li>
+  {/for}
+  {if condition="$canNext"}
+    <li>...</li>
+    <li class="">
+      <a href="{$end.link}">{$end.label}</a>
+    </li>
+  {/if}
+  </ul>
+</div>

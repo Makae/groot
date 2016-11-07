@@ -1,0 +1,20 @@
+<div id="logo">
+  <span class="stdanimation1_4">G</span>
+</div>
+<form id="search" method="POST">
+  <input type="hidden" value="search" name="view" />
+  <select name="category">
+    <option value="1">Fantasy</option>
+    <option value="2">Horror</option>
+    <option value="3">Mein kleiner Scheich</option>
+  </select>
+  <input type="text" name="search_text" id="search_text" />
+  <button type="submit" name="search" value="search">Suchen</button>
+</form>
+<ul class="menu menu-main">
+  {for array="main_menu"}
+    <li>
+      <a class="stdanimation1_2">{$value}</a>
+    </li>
+  {/for}
+</ul>
